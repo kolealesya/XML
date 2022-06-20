@@ -1,1 +1,21 @@
-
+<bugreport>
+<ID>1</ID>
+<Summary>RegistrationFormNotOpening</Summary>
+<Project>Name</Project>
+<Version>MacOS12.4</Version>
+<Severity>S1</Severity>
+<Priority>P1</Priority>
+<Status>New</Status>
+<Author>KolegovaAlesya</Author>
+<AssignedTo>FullName</AssignedTo>
+<STR>
+    <STR>GoToTheMainPage</STR>
+    <STR>ClickOnTheRegisterButton</STR>
+</STR>
+<ActualResult>RegistrationFormNotOpening</ActualResult>
+<ExpectedResult>ARegistrationFormWillAppear</ExpectedResult>
+<Attachment>
+<Attachment>links</Attachment>
+<Attachment>screenshots</Attachment>
+</Attachment>
+</bugreport>
