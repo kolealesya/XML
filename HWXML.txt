@@ -1,0 +1,103 @@
+XML
+
+1. Создать внешний репозиторий с названием XML
+Repositories - New - Repository name - XML - Public - Add a README file - Create repository
+
+2. Клонировать репозиторий XML на локальный компьютер 
+git clone git@github.com:kolealesya/XML.git
+
+3. Внутри локального XML создать файл new.xml
+cd XML
+touch new.xml
+
+4. Добавить файд под гит
+git add .
+
+5. Закоммитить файл
+git commit -m "Add new.xml file"
+
+6. Отправить файл на внешний GitHub репозиторий
+git push
+
+7. Отредактировать содержание файла new.xml - написать информацию о себе (ФИО, возраст, кол-во домашних животных, будущая желаемая зарплата)
+vim new.xml
+<info> 
+<FullName>KolegovaAlesya</FullName> 
+<age>23</age> 
+<pet>1</pet> 
+<salary>1000</salary>
+</info>
+
+8. Отправить изменения на внешний репозиторий
+git add .
+git commit -m "Add information to file"
+git push
+
+9. Создать файл preferences.xml
+touch preferences.xml
+
+10. В файл preferences.xml добавить информацию о своих предпочтениях (любимый фильм, любимый сериал, любимая еда, любимое время года, страна, которую хочется посетить)
+vim preferences.xml
+<preferences>
+<Movie>Joker</Movie> 
+<Series>DesperateHousewives</Series>
+<Food>Pasta</Food> 
+<Season>Spring</Season>
+<Country>Greece</Country>
+</preferences>
+
+11.Создать файл skills.xml и добавить информацию о скиллах, которые будут изучены на курсе
+touch skills.xml
+vim skills.xml
+<Skills>
+      <Skill>Theory</Skill>
+      <Skill>Documentation</Skill>
+      <Skill>Methodologies</Skill>
+      <Skill>Databases</Skill>
+      <Skill>Web-technologies</Skill>
+      <Skill>Mobile</Skill>
+      <Skill>DevTools</Skill>
+      <Skill>SQL</Skill>
+</Skills>
+
+12. Сделать коммит в одну строку
+git add . && git commit -m "Add preferences.xml and skills.xml files"
+
+13. Отправить сразу два файла на внешний репозиторий 
+git push
+
+14. На веб интерфейсе создать файл bug_report.xml
+Repositories - XML - Add file - Create new file - bug_report.xml
+
+15. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Commit new file
+
+16.  На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт
+XML - bug_report.xml - edit
+<bugreport>
+<ID>1</ID>
+<Summary>RegistrationFormNotOpening</Summary>
+<Project>Name</Project>
+<Version>MacOS12.4</Version>
+<Severity>S1</Severity>
+<Priority>P1</Priority>
+<Status>New</Status>
+<Author>KolegovaAlesya</Author>
+<AssignedTo>FullName</AssignedTo>
+<STR>
+    <STR>GoToTheMainPage</STR>
+    <STR>ClickOnTheRegisterButton</STR>
+</STR>
+<ActualResult>RegistrationFormNotOpening</ActualResult>
+<ExpectedResult>ARegistrationFormWillAppear</ExpectedResult>
+<Attachment>
+<Attachment>links</Attachment>
+<Attachment>screenshots</Attachment>
+</Attachment>
+</bugreport>
+
+17. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+Commit changes
+
+18. Синхронизировать внешний и локальный репозиторий XML
+git pull
